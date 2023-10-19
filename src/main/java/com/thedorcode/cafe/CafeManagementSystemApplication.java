@@ -1,4 +1,4 @@
-package com.thedorcode.cafe.com.thedorcode.cafe;
+package com.thedorcode.cafe;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

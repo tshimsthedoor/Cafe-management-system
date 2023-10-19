@@ -1,13 +1,16 @@
-package com.thedorcode.cafe.com.thedorcode.cafe.POJO;
+package com.thedorcode.cafe.POJO;
 
 
 import jakarta.persistence.*;
 import lombok.Data;
 import org.hibernate.annotations.DynamicInsert;
 
-import java.io.Serial;
 import java.io.Serializable;
 
+
+
+
+@NamedQuery(name = "User.findByEmailId", query = "select u from User u where u.email =:email ")
 
 @Data
 @Entity
@@ -15,7 +18,7 @@ import java.io.Serializable;
 @Table(name="user")
 public class User implements Serializable {
 
-    @Serial
+
     private static final long serialVersionUID = 1L;
 
     @Id
